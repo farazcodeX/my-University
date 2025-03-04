@@ -6,21 +6,22 @@ public class student {
     
     public int ID;
     public static ArrayList<student> studentList;
-    public int personID;
+    public String personID;
     public final int entranceYear;
     public int majorID;
     public String studentID;
 
-    public student(int personID, int entranceYearm, int majorID)
+    public student(String personID, int entranceYear, int majorID)
     {
         this.personID = personID;
-        this.entranceYear = entranceYearm;
+        this.entranceYear = entranceYear;
         this.majorID = majorID;
-        this.ID = studentList.size();
+        
         setStudentCode();
 
         studentList.add(this);
-
+        // idk this will work or nah
+        this.ID = studentList.size();
 
     }
     public static student studentFindBy(int ID)

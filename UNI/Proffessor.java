@@ -8,18 +8,18 @@ public class Proffessor {
     public static ArrayList<Proffessor> profList;
     
     // shows the person Object thet this peroff is.
-    public int personID;
+    public String personID;
 
     // major that this press gives
     public int majorID;
 
 
-    public Proffessor(int personID, int majorID)
+    public Proffessor(String nationalID, int majorID)
     {
-        this.personID = personID;
+        this.personID = nationalID;
         this.majorID = majorID;
-        ID = profList.size();
         profList.add(this);
+        this.ID = profList.size();
         
 
     }

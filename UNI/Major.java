@@ -15,6 +15,9 @@ public class Major {
         this.name = name;
         this.capacity = capacity;
 
+        majorList.add(this);
+        this.ID = majorList.size();
+
     }
     public static Major findByID(int ID)
     {
