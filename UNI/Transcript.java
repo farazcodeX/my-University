@@ -9,10 +9,14 @@ public class Transcript {
 
     public Transcript(int studentID)
     {
+        this.studentID = studentID;
+        transcript = new HashMap<>();
 
     }
-    public void getGrade(int presentCourseID, double grade)
+    public void setGrade(int presentCourseID, double grade)
     {
+        
+
 
     }
     public void printTranscript()

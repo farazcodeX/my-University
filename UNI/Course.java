@@ -9,12 +9,23 @@ public class Course {
     public String title;
     public int units;
     
-    public Course(int ID)
+    public Course(String title ,int ID)
     {
+        this.title = title;
+        this.ID = ID;
 
     }
     public static Course findByID(int ID)
     {
+        for (int i = 0; i < courseList.size(); i++) {
+            
+            if(ID == courseList.get(i).ID)
+            {
+                return courseList.get(i);
+            }
+            
+
+        }
         return null;
     }
 
