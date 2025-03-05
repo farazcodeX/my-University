@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Proffessor {
 
     public int ID;
-    public static ArrayList<Proffessor> profList;
+    public static ArrayList<Proffessor> profList = new ArrayList<>();
     
     // shows the person Object thet this peroff is.
     public String personID;

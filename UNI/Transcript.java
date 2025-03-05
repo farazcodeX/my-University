@@ -26,7 +26,7 @@ public class Transcript {
        // exit2 means student founded
         boolean exit2 = false;
 
-       ++units;
+       units += 1;
 
 
 
@@ -68,6 +68,7 @@ public class Transcript {
     }
     public void printTranscript()
     {
+        System.out.println("student " + studentID);
         for(int i = 0; i < PresentCourse.presentCourseList.size(); ++i)
         {
             for(int j = 0; j < PresentCourse.students.size(); ++j)
@@ -79,7 +80,7 @@ public class Transcript {
                         double grade = transcript.get(PresentCourse.presentCourseList.get(i).courseID);
                         sumGrades += grade;
                        
-                        System.out.print("Corse "+ PresentCourse.presentCourseList.get(i).courseID + "grade : " + grade);
+                        System.out.println("Corse    "+ PresentCourse.presentCourseList.get(i).courseID + "    grade : " + grade);
                     }
 
                 }
@@ -88,11 +89,14 @@ public class Transcript {
             
 
         }
+        System.out.println();
+        System.out.println();
 
     } 
   
     public double getGPA()
     {
-        return sumGrades/units;
+        double GPA = sumGrades / (double)(units+1);
+        return GPA;
     }
 }

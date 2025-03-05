@@ -1,14 +1,14 @@
-package UNI;
+
 
 // Importing required classes
 import base.Person;
+import UNI.*;
 
 public class Main {
     public static void main(String[] args) {
 
         // Creating Person objects
-        Person person1 = new Person("Faraz", "2742504803");
-        
+        Person person1 = new Person("Faraz", "2742504803");        
         Person person2 = new Person("Ali", "2753905672");
         Person person3 = new Person("Hashem", "2744050969");
         Person person4 = new Person("Behzad", "2395461269");

@@ -18,10 +18,10 @@ public class Student {
         this.majorID = majorID;
         
         setStudentCode();
-
+        this.ID = studentList.size() + 1;
         studentList.add(this);
         // idk this will work or nah
-        this.ID = studentList.size();
+        
 
     }
     public static Student studentFindBy(int ID)
@@ -38,6 +38,6 @@ public class Student {
     }
     public void setStudentCode()
     {
-       studentID = String.valueOf(ID) + String.valueOf(entranceYear);
+       studentID = String.valueOf(entranceYear) + String.valueOf(majorID) + String.valueOf(ID);
     }
 }

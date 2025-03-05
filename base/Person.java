@@ -15,9 +15,10 @@ public class Person {
        
         this.name = name;
         this.nationalID = nationalID;
-        
+        ID = personList.size() + 1;
+
         personList.add(this);
-        ID = personList.size();
+       
 
     }
     public static Person findByID(int ID)

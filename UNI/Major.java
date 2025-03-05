@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Major {
 
     public int ID;
-    public static ArrayList<Major> majorList;
+    public static ArrayList<Major> majorList = new ArrayList<>();
     public String name;
     public final int capacity;
     public int numberOfStudents = 0;
@@ -14,9 +14,11 @@ public class Major {
     {
         this.name = name;
         this.capacity = capacity;
+        this.ID = majorList.size() + 1;
 
+        
         majorList.add(this);
-        this.ID = majorList.size();
+        
 
     }
     public static Major findByID(int ID)
