@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Transcript {
   
     public String studentID;
-    public HashMap<Integer, Double> transcript;
+    public HashMap<Integer, Double> transcript = new HashMap<>();
 
     
     public int units = 0;

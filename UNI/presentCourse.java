@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class PresentCourse {
     
     public int ID;
-    public static ArrayList<PresentCourse> presentCourseList;
+    public static ArrayList<PresentCourse> presentCourseList = new ArrayList<>();
     public int courseID;
     public int proffesorID;
     public final int capacity;
-    public static ArrayList<String> students;
+    public static ArrayList<String> students = new ArrayList<>();
 
     public PresentCourse(int courseID, int proffesorID, int maxCapacity)
     {

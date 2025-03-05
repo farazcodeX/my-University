@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Student {
     
     public int ID;
-    public static ArrayList<Student> studentList;
+    public static ArrayList<Student> studentList = new ArrayList<>();
     public String personID;
     public final int entranceYear;
     public int majorID;
