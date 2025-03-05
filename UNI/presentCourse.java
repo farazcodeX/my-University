@@ -8,8 +8,8 @@ public class presentCourse {
     public static ArrayList<presentCourse> presentCourseList;
     public int courseID;
     public int proffesorID;
-    public int capacity;
-    public ArrayList<Integer> students;
+    public final int capacity;
+    public static ArrayList<String> students;
 
     public presentCourse(int courseID, int proffesorID, int maxCapacity)
     {
@@ -32,9 +32,15 @@ public class presentCourse {
         }
         return null;
     }
-    public void addStudent(int stuID)
+    public void addStudent(String stuID)
     {
-      this.students.add(stuID);
+        if(students.size() <= capacity)
+        {
+            this.students.add(stuID);
+        }
+        else
+        System.out.println("Course is full :(");
+      
         
     }
     
