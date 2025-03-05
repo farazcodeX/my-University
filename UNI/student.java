@@ -18,8 +18,10 @@ public class Student {
         this.majorID = majorID;
         
         setStudentCode();
+       
+        studentList.add(this); 
         this.ID = studentList.size() + 1;
-        studentList.add(this);
+
         // idk this will work or nah
         
 

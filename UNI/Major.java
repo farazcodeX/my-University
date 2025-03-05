@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Major {
 
-    public int ID;
+    public int majorID;
     public static ArrayList<Major> majorList = new ArrayList<>();
     public String name;
     public final int capacity;
@@ -14,9 +14,9 @@ public class Major {
     {
         this.name = name;
         this.capacity = capacity;
-        this.ID = majorList.size() + 1;
-
         
+     //  this.ID = majorList.size() + 1;
+
         majorList.add(this);
         
 
@@ -25,7 +25,7 @@ public class Major {
     {
         for(int i = 0; i < majorList.size(); ++i)
         {
-            if(majorList.get(i).ID == ID)
+            if(majorList.get(i).majorID == ID)
             {
                 return majorList.get(i);
             }

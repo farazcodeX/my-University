@@ -16,22 +16,27 @@ public class Main {
 
         // Creating Major objects
         Major major1 = new Major("Computer Science", 60);
+        major1.majorID = 17;
+        
         Major major2 = new Major("Math and Usage", 50);
+        major2.majorID = 13;
 
         // Creating Student objects
-        Student student1 = new Student(person1.nationalID, 403, major1.ID);
-        Student student2 = new Student(person2.nationalID, 403, major1.ID);
-        Student student3 = new Student(person3.nationalID, 403, major2.ID);
+        Student student1 = new Student(person1.nationalID, 403, major1.majorID);
+        Student student2 = new Student(person2.nationalID, 403, major1.majorID);
+        Student student3 = new Student(person3.nationalID, 403, major2.majorID);
 
         // Creating Professor objects
-        Proffessor professor1 = new Proffessor(person5.nationalID, major1.ID);
-        Proffessor professor2 = new Proffessor(person4.nationalID, major2.ID);
+        Proffessor professor1 = new Proffessor(person5.nationalID, major1.majorID);
+        Proffessor professor2 = new Proffessor(person4.nationalID, major2.majorID);
 
         // Creating Course objects
         Course course1 = new Course("AP", 11);
+        course1.units = 3;
         Course course2 = new Course("Calculus 2", 14);
+        course2.units = 3;
         Course course3 = new Course("BP", 5);
-
+        course3.units = 2;
         // Creating presentCourse objects
         PresentCourse presCourse1 = new PresentCourse(course1.ID, professor1.ID, 30);
         PresentCourse presCourse2 = new PresentCourse(course2.ID, professor1.ID, 20);
@@ -68,6 +73,7 @@ public class Main {
         transcript3.printTranscript();
 
         // Printing GPA of each student
+        // transcript1.getGPA();
         System.out.println("GPA of student 1: " + transcript1.getGPA());
         System.out.println("GPA of student 2: " + transcript2.getGPA());
         System.out.println("GPA of student 3: " + transcript3.getGPA());

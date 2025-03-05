@@ -38,7 +38,7 @@ public class Transcript {
                 for(int j = 0; j < PresentCourse.students.size(); ++j)
                 {
                     if(PresentCourse.students.get(j).equals(studentID))
-                    {
+                    {   
                      transcript.put(presentCourseID, grade);
                      exit2 = true;
                      break;

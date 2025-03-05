@@ -16,7 +16,7 @@ public class PresentCourse {
         this.courseID = courseID;
         this.proffesorID = proffesorID;
         this.capacity = maxCapacity;
-        this.ID = presentCourseList.size();
+        this.ID = presentCourseList.size() + 1;
 
         presentCourseList.add(this);
 
