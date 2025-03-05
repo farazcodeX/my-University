@@ -3,7 +3,7 @@ package base;
 import java.util.ArrayList;
 
 public class Person {
-
+    
     public int ID;
     public static ArrayList<Person> personList = new ArrayList<>();
     public String name;
@@ -16,10 +16,10 @@ public class Person {
         this.name = name;
         this.nationalID = nationalID;
         
-        ID = personList.size() + 1;
+        
 
         personList.add(this);
-        
+        ID = personList.size();
 
     }
     public static Person findByID(int ID)
