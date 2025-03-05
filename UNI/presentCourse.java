@@ -2,16 +2,16 @@ package UNI;
 
 import java.util.ArrayList;
 
-public class presentCourse {
+public class PresentCourse {
     
     public int ID;
-    public static ArrayList<presentCourse> presentCourseList;
+    public static ArrayList<PresentCourse> presentCourseList;
     public int courseID;
     public int proffesorID;
     public final int capacity;
     public static ArrayList<String> students;
 
-    public presentCourse(int courseID, int proffesorID, int maxCapacity)
+    public PresentCourse(int courseID, int proffesorID, int maxCapacity)
     {
         this.courseID = courseID;
         this.proffesorID = proffesorID;
@@ -21,7 +21,7 @@ public class presentCourse {
         presentCourseList.add(this);
 
     }
-    public static presentCourse findByID(int ID)
+    public static PresentCourse findByID(int ID)
     {
         for(int i = 0; i < presentCourseList.size(); ++i)
         {

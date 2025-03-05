@@ -2,16 +2,16 @@ package UNI;
 
 import java.util.ArrayList;
 
-public class student {
+public class Student {
     
     public int ID;
-    public static ArrayList<student> studentList;
+    public static ArrayList<Student> studentList;
     public String personID;
     public final int entranceYear;
     public int majorID;
     public String studentID;
 
-    public student(String personID, int entranceYear, int majorID)
+    public Student(String personID, int entranceYear, int majorID)
     {
         this.personID = personID;
         this.entranceYear = entranceYear;
@@ -24,7 +24,7 @@ public class student {
         this.ID = studentList.size();
 
     }
-    public static student studentFindBy(int ID)
+    public static Student studentFindBy(int ID)
     {
 
         for(int i = 0; i < studentList.size(); ++i)

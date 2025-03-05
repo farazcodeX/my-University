@@ -9,7 +9,7 @@ public class Transcript {
 
     
     public int units = 0;
-    private double sumGrades = 0;
+    public double sumGrades = 0;
 
     public Transcript(String studentID)
     {
@@ -31,13 +31,13 @@ public class Transcript {
 
 
 
-        for(int i = 0; i < presentCourse.presentCourseList.size(); ++i)
+        for(int i = 0; i < PresentCourse.presentCourseList.size(); ++i)
         {
-            if(presentCourse.presentCourseList.get(i).courseID == presentCourseID)
+            if(PresentCourse.presentCourseList.get(i).courseID == presentCourseID)
             {
-                for(int j = 0; j < presentCourse.students.size(); ++j)
+                for(int j = 0; j < PresentCourse.students.size(); ++j)
                 {
-                    if(presentCourse.students.get(j).equals(studentID))
+                    if(PresentCourse.students.get(j).equals(studentID))
                     {
                      transcript.put(presentCourseID, grade);
                      exit2 = true;
@@ -68,18 +68,18 @@ public class Transcript {
     }
     public void printTranscript()
     {
-        for(int i = 0; i < presentCourse.presentCourseList.size(); ++i)
+        for(int i = 0; i < PresentCourse.presentCourseList.size(); ++i)
         {
-            for(int j = 0; j < presentCourse.students.size(); ++j)
+            for(int j = 0; j < PresentCourse.students.size(); ++j)
             {
-                if(presentCourse.students.get(j).equals(studentID))
+                if(PresentCourse.students.get(j).equals(studentID))
                 {
-                    if(transcript.containsKey(presentCourse.presentCourseList.get(i).courseID))
+                    if(transcript.containsKey(PresentCourse.presentCourseList.get(i).courseID))
                     {
-                        double grade = transcript.get(presentCourse.presentCourseList.get(i).courseID);
+                        double grade = transcript.get(PresentCourse.presentCourseList.get(i).courseID);
                         sumGrades += grade;
                        
-                        System.out.print("Corse "+ presentCourse.presentCourseList.get(i).courseID + "grade : " + grade);
+                        System.out.print("Corse "+ PresentCourse.presentCourseList.get(i).courseID + "grade : " + grade);
                     }
 
                 }
