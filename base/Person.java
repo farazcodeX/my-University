@@ -16,8 +16,6 @@ public class Person {
         this.name = name;
         this.nationalID = nationalID;
         
-        
-
         personList.add(this);
         ID = personList.size();
 
